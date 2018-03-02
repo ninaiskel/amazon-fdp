@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto';
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 0; }
 
 h1, h2 {
   margin: 0; }
@@ -18,3 +19,27 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+.header {
+  background: #232E3E;
+  height: 60px; }
+
+.product {
+  margin-top: 40px; }
+  .product-name {
+    padding: 20px;
+    text-align: center; }
+
+.product-image {
+  margin: 50px 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30% 1fr 30%;
+  justify-content: space-around;
+  justify-items: center; }
+  .product-image-main img {
+    width: 90%; }
+  .product-image .price {
+    color: white;
+    padding: 20px;
+    background: #232E3E; }
