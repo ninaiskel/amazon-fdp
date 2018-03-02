@@ -1,0 +1,31 @@
+$colors: (
+	main          : #232E3E,
+	second        : #EE7C0B,
+	background    : #EFEFEF,
+	white         : #ffffff,
+	text          : #3c3c3c,
+	text-light    : #757575,
+	border        : #dddddd,
+	twitter	      : #55acee,
+	facebook      : #3b5998
+);
+//
+
+//breakpoints
+@mixin breakpoint($device) {
+	@if not map-has-key($breakpoints, $device) {
+		@error 'Device value (#{$device}) is unknown';
+	}
+	@media #{map-get($breakpoints, $device)} {
+		@content;
+	}
+}
+
+$breakpoints: (
+	'xlarge'          : "(min-width: 1360px)",
+	'large'           : "(min-width: 1024px)",
+	'>=small<=medium' : "(min-width: 240px) and (max-width: 1023px)",
+	'medium'          : "(min-width: 721px) and (max-width: 1023px)",
+	'small'           : "(min-width: 240px) and (max-width: 720px)",
+	'small-small'     : "(min-width: 240px) and (max-width: 400px)"
+)!default;
