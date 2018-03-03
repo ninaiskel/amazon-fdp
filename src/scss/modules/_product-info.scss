@@ -1,0 +1,42 @@
+.product-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  &-wrap {
+    background: map-get($colors, background);
+    padding: 40px;
+  }
+
+  &-detail {
+    background: map-get($colors, main);
+    flex-basis: 40%;
+    height: 70px;
+    display: flex;
+  }
+}
+
+.product-info-form {
+  display: flex;
+
+  h4 {
+    color: map-get($colors, text-light);
+  }
+
+  input[type="radio"] {
+    height: 0;
+    visibility: hidden;
+    width: 0;
+  }
+
+  label {
+    font-size: .9rem;
+    color: map-get($colors, text-light);
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+}
+
+.form-options {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,51 @@
+.form-type {
+  h4 {
+    margin-left: 4px;
+  }
+}
+
+.type-choice {
+  display: flex;
+
+  &-input {
+    margin-right: 8px;
+    display: flex;
+
+    label {
+      align-items: center;
+      display: flex;
+      position: relative;
+
+      &:before{
+        content: '';
+        background: white;
+        border-radius: 30px;
+        border: 1px solid map-get($colors, second);
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin-right: 4px;
+      }
+
+      &:after {
+        content: '';
+        background: #EE7C0B;
+        border-radius: 100px;
+        display: inline-block;
+        height: 22px;
+        left: 5px;
+        position: absolute;
+        top: 5px;
+        width: 22px;
+        transition: all .4s ease;
+        transform: scale(0);
+      }
+    }
+
+    input[type="radio"]:checked + label {
+      &:after {
+        transform: scale(1);
+      }
+    }
+  }
+}

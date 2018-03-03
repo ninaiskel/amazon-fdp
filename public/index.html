@@ -42,8 +42,89 @@
       </div>
     </section>
     <section class="product-info">
-      <div class="product-info-form"></div>
-      <div class="product-info-detail"></div>
+			<div class="product-info-wrap">
+				<form action="" class="product-info-form">
+					<!-- color-choice -->
+					<div class="form-options form-color">
+						<h4>Color: </h4>
+						<div class="color-choice">
+							<div class="color-choice-input input-color-gray-dark">
+								<input id="cam-color-gray-dark"
+								name="cam-color"
+								type="radio"/>
+								<label for="cam-color-gray-dark"></label>
+							</div>
+							<div class="color-choice-input input-color-black">
+								<input id="cam-color-black"
+								name="cam-color"
+								type="radio" checked/>
+								<label for="cam-color-black"></label>
+							</div>
+							<div class="color-choice-input input-color-gray-medium">
+								<input id="cam-color-gray-medium"
+								name="cam-color"
+								type="radio"/>
+								<label for="cam-color-gray-medium"></label>
+							</div>
+							<div class="color-choice-input input-color-gray-light">
+								<input id="cam-color-gray-light"
+								name="cam-color"
+								type="radio"/>
+								<label for="cam-color-gray-light"></label>
+							</div>
+						</div>
+					</div>
+					<!-- type choice -->
+					<div class="form-options form-type">
+						<h4>Comprar: </h4>
+						<div class="type-choice">
+							<div class="type-choice-input new">
+								<input id="new" name="type-choice" type="radio" checked/>
+								<label for="new">Nuevo</label>
+							</div>
+							<div class="type-choice-input used">
+								<input id="used" name="type-choice" type="radio"/>
+								<label for="used">Usado</label>
+							</div>
+						</div>
+					</div>
+					<!-- type choice -->
+					<div class="form-options form-qty">
+						<h4>Cantidad: </h4>
+						<div class="type-qty">
+
+						</div>
+					</div>
+				</form>
+				<form class="product-info-form" action="">
+					<div class="form-options form-aditional">
+						<h4>Nombre de estilo: </h4>
+						<div class="aditional-options">
+							<div class="aditional-options-input ">
+								<input id="no-kit"
+											 name="aditional-options"
+											 type="radio"/>
+								<label for="no-kit">Cuerpo sin objetivo</label>
+							</div>
+							<div class="aditional-options-input ">
+								<input id="kit-18-55"
+											 name="aditional-options"
+											 type="radio" checked/>
+								<label for="kit-18-55">Kit Objetivo 18-55</label>
+							</div>
+							<div class="aditional-options-input ">
+								<input id="kit-55"
+											name="aditional-options"
+											type="radio"/>
+								<label for="kit-55">Kit Objetivo 55</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="product-info-detail"></div>
+
+
     </section>
   </body>
 </html>

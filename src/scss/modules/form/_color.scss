@@ -1,0 +1,45 @@
+.form-color {
+  h4 {
+    margin-left: 8px;
+  }
+}
+.color-choice {
+  display: flex;
+
+  &-input {
+    // margin-right: 4px;
+    label {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      border: 2px solid transparent;
+    }
+
+    input[type="radio"]:checked + label {
+      border-color: map-get($colors, second);
+    }
+  }
+}
+  // colors label
+.input-color-gray-dark {
+  label {
+    background: map-get($colors, gray-dark);
+  }
+}
+.input-color-black {
+  label {
+    background: map-get($colors, black);
+  }
+}
+
+.input-color-gray-medium {
+  label {
+    background: map-get($colors, gray-medium);
+  }
+}
+
+.input-color-gray-light {
+  label {
+    background: map-get($colors, gray-light);
+  }
+}

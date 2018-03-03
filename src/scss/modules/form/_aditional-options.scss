@@ -1,0 +1,25 @@
+.form-aditional {
+  h4 {
+    margin-left: 8px;
+  }
+}
+.aditional-options {
+  display: flex;
+  padding-top: 10px;
+
+  &-input {
+    margin-right: 4px;
+
+    label{
+      background: white;
+      border: 1px solid map-get($colors, second);
+      box-sizing: border-box;
+      padding: 10px;
+    }
+
+    input[type="radio"]:checked + label {
+      background: map-get($colors, second);
+      color: white;
+    }
+  }
+}
