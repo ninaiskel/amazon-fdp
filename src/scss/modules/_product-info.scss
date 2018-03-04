@@ -1,22 +1,44 @@
 .product-info {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 60% 40%;
+  align-items: center;
 
   &-wrap {
     background: map-get($colors, background);
-    padding: 40px;
+    padding: 30px;
+
+    @include breakpoint('xlarge') {
+      padding: 40px;
+    }
+
+    @include breakpoint('small') {
+      padding: 20px;
+    }
+
   }
 
   &-detail {
     background: map-get($colors, main);
-    flex-basis: 40%;
-    height: 70px;
-    display: flex;
+    color: white;
+    position: relative;
+    top: -8px;
+
+    a {
+      color: white;
+      font-size: .9rem;
+      transition: color .6s ease;
+      
+    }
+  }
+
+	@include breakpoint('>=small<=medium') {
+    grid-template-columns: 100%;
   }
 }
 
 .product-info-form {
   display: flex;
+  flex-wrap: wrap;
 
   h4 {
     color: map-get($colors, text-light);

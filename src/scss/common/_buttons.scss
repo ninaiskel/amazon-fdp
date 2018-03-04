@@ -1,0 +1,42 @@
+.btn {
+  box-sizing: border-box;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .6s ease;
+
+  &-submit {
+    background: map-get($colors, second);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-wish {
+    background: map-get($colors, main-dark);
+  }
+
+  &-inactive {
+    background: map-get($colors, border);
+    svg {
+      fill: map-get($colors, text-light);
+    }
+  }
+}
+
+.button-form {
+  border: none;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: map-get($colors, second);
+
+  svg {
+    fill: white;
+  }
+}

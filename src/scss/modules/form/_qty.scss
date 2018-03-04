@@ -1,6 +1,14 @@
 .type-qty {
-  height: 30px;
-  width: 150px;
-  border: 1px solid #ddd;
-  background: white;
+  display: flex;
+
+  input {
+    font-size: .8rem;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+  }
+
+  button {
+    cursor: pointer;
+  }
 }

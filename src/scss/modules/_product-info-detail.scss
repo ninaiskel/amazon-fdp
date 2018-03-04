@@ -1,0 +1,119 @@
+.detail-wrap {
+  padding: 30px;
+
+  @include breakpoint('xlarge') {
+    padding: 40px;
+  }
+
+  @include breakpoint('small') {
+    padding: 20px;
+  }
+
+  a {
+    &:hover {
+      color: map-get($colors, second);
+    }
+  }
+}
+
+.info-detail {
+  display: flex;
+
+  span {
+    font-size: .9rem;
+    @include breakpoint('small') {
+      font-size: .8rem;
+    }
+  }
+}
+
+.detail-shipping {
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+
+  p {
+    margin: 0 10px;
+  }
+
+  .shipped-type {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
+//detail-stock
+.detail-stock {
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.detail-stok-reviews {
+  display: flex;
+}
+
+.reviews {
+  display: flex;
+  margin-right: 10px;
+
+  li {
+    margin-left: 5px;
+  }
+
+  svg {
+    height: 16px;
+    width: 17px;
+    fill: map-get($colors, second);
+  }
+
+  .star-empty {
+    fill: map-get($colors, main);
+    stroke: map-get($colors, second);
+  }
+}
+
+//detail-store
+.details-store{
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 5px;
+    margin-right: 10px;
+
+  }
+}
+
+.amazon-choice {
+  background: map-get($colors, main-dark);
+  padding: 4px;
+  text-decoration: none;
+
+  span {
+    color: map-get($colors, second);
+  }
+}
+
+.detail-price-share {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+
+  a {
+    display: inherit;
+  }
+
+}
+
+.detail-buy {
+  flex-wrap: wrap;
+
+  .btn-submit{
+    flex-basis: 70%;
+  }
+
+  .btn-wish {
+    flex-basis: 30%;
+  }
+}

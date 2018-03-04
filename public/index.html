@@ -5,7 +5,7 @@
 		<meta name="application-name" content="Amazon product">
 		<meta name="author" content="Jessica Aiskel Aristimuño">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0'">
 		<meta name="robots" content="all">
 		<meta name="description" content="ficha de producto amazon">
 		<title>Amazon | ficha de producto</title>
@@ -13,6 +13,37 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	</head>
 	<body>
+		<!-- svg -->
+		<svg width="0" height="0" style="display:none;">
+			<symbol id="shipped" width="32" height="20" xmlns="http://www.w3.org/2000/svg">
+			  <g fill="#FFF">
+			    <path d="M29.229 8.479l-.814-3.275a.494.494 0 0 0 .39-.484v-.528c0-1.147-.928-2.08-2.068-2.08H23.03V1.023C23.03.46 22.574 0 22.013 0H3.117C2.556 0 2.1.459 2.1 1.023V10c0 .273.22.495.492.495A.494.494 0 0 0 3.084 10V1.023c0-.018.014-.033.033-.033h18.896c.018 0 .033.015.033.033V10c0 .274.22.495.492.495A.494.494 0 0 0 23.03 10v-.56h5.808c.714 0 1.32.472 1.529 1.122h-1.53a.494.494 0 0 0-.492.495v1.056c0 .856.691 1.552 1.542 1.552h.557v2.178h-1.286a3.123 3.123 0 0 0-2.946-2.113 3.123 3.123 0 0 0-2.945 2.113h-.237v-3.73a.494.494 0 0 0-.492-.495.494.494 0 0 0-.492.495v3.73h-10.21a3.123 3.123 0 0 0-2.945-2.113 3.123 3.123 0 0 0-2.946 2.113H3.117a.033.033 0 0 1-.033-.033v-1.09h2.132a.494.494 0 0 0 .492-.495.494.494 0 0 0-.492-.495H.492a.494.494 0 0 0-.492.495c0 .274.22.495.492.495H2.1v1.09c0 .564.456 1.023 1.017 1.023h2.658l-.001.033A3.129 3.129 0 0 0 8.891 20c1.718 0 3.116-1.406 3.116-3.135v-.033h11.09l-.001.033c0 1.729 1.398 3.135 3.116 3.135 1.719 0 3.117-1.406 3.117-3.135l-.001-.033h1.608a.494.494 0 0 0 .493-.495v-5.28a2.606 2.606 0 0 0-2.2-2.578zM23.03 3.102h3.707c.597 0 1.083.489 1.083 1.09v.032h-4.79V3.102zm0 5.347V5.215h4.373l.804 3.234H23.03zM8.89 19.01a2.141 2.141 0 0 1-2.132-2.145c0-1.183.957-2.145 2.133-2.145 1.175 0 2.132.962 2.132 2.145a2.141 2.141 0 0 1-2.132 2.145zm17.322 0a2.141 2.141 0 0 1-2.132-2.145c0-1.183.957-2.145 2.132-2.145 1.176 0 2.133.962 2.133 2.145a2.141 2.141 0 0 1-2.133 2.145zm4.232-6.337h-.557a.56.56 0 0 1-.558-.56v-.562h1.115v1.122z"/>
+			    <path d="M8.929 15.714a1.073 1.073 0 0 0 0 2.143 1.073 1.073 0 0 0 0-2.143zm17.142 0a1.073 1.073 0 0 0 0 2.143 1.073 1.073 0 0 0 0-2.143zm-5.149-2.143h-7.559c-.28 0-.506.16-.506.358 0 .197.227.357.506.357h7.56c.279 0 .506-.16.506-.357 0-.198-.227-.358-.507-.358zM7.375 11.429H1.197c-.267 0-.483.16-.483.357 0 .197.216.357.483.357h6.178c.266 0 .482-.16.482-.357 0-.198-.216-.357-.482-.357zm9.62-6.285a.516.516 0 0 0-.716 0l-4.502 4.381-2.341-2.279a.516.516 0 0 0-.716 0 .483.483 0 0 0 0 .697l2.7 2.627a.512.512 0 0 0 .357.144.51.51 0 0 0 .358-.144l4.86-4.73a.483.483 0 0 0 0-.696z"/>
+			  </g>
+			</symbol>
+			<symbol  id="shop" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+			  <g fill="#FFF">
+			    <path d="M13.715 16.572c-.965 0-1.715.773-1.715 1.713 0 .942.792 1.715 1.715 1.715.921 0 1.713-.773 1.713-1.715 0-.94-.79-1.713-1.713-1.713zm0 2.569c-.485 0-.835-.386-.835-.86 0-.472.396-.858.835-.858.438 0 .833.386.833.859s-.395.859-.833.859zm-9.143-2.57c-.965 0-1.715.774-1.715 1.714 0 .942.791 1.715 1.715 1.715.963 0 1.713-.773 1.713-1.715 0-.94-.79-1.713-1.713-1.713zm0 2.57c-.485 0-.835-.386-.835-.86 0-.472.397-.858.835-.858.483 0 .833.386.833.859 0 .476-.39.859-.833.859zM17.589 0l-.669 2.582H0l3.122 9.082c-1.046.15-1.827 1.019-1.827 2.136 0 1.225.946 2.2 2.154 2.2h11.726v-.804H3.448c-.732 0-1.293-.592-1.293-1.356 0-.764.603-1.355 1.293-1.355h11.768l3.06-11.64H20V0h-2.41zm-3.018 11.64H4.01L1.207 3.426h15.477L14.57 11.64z"/>
+			    <path d="M5.715 5.143h.909v4.572h-.91V5.143zm2.857 0h.909v4.572h-.91V5.143zm2.856 0h.91v4.572h-.91V5.143z"/>
+			  </g>
+			</symbol>
+			<symbol id="star" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M9.075.502l1.867 3.824c.13.266.38.45.671.493l4.175.613c.73.107 1.023 1.015.494 1.536L13.26 9.945a.907.907 0 0 0-.256.797l.713 4.203c.125.736-.64 1.297-1.294.95L8.691 13.91a.884.884 0 0 0-.83 0l-3.734 1.984c-.654.348-1.418-.213-1.293-.95l.713-4.202a.907.907 0 0 0-.256-.797L.27 6.968c-.53-.521-.238-1.43.493-1.536l4.175-.613a.892.892 0 0 0 .67-.493L7.478.502a.887.887 0 0 1 1.598 0z" />
+			</symbol>
+			<symbol id="wish" xmlns="http://www.w3.org/2000/svg">
+				<path d="M11.5 21l-1.47-1.522c-5.46-5-9.03-8.37-9.03-12.5C1 3.608 3.52 1 6.775 1c1.785 0 3.57.87 4.725 2.283C12.655 1.87 14.44 1 16.225 1 19.48 1 22 3.609 22 6.978c0 4.13-3.57 7.5-9.03 12.5L11.5 21z" stroke="#FFF" fill="none"/>
+			</symbol>
+			<symbol id="share" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.6 481.6" >
+			  <path d="M381.6 309.4c-27.7 0-52.4 13.2-68.2 33.6l-132.3-73.9c3.1-8.9 4.8-18.5 4.8-28.4 0-10-1.7-19.5-4.9-28.5l132.2-73.8c15.7 20.5 40.5 33.8 68.3 33.8 47.4 0 86.1-38.6 86.1-86.1S429 0 381.5 0s-86.1 38.6-86.1 86.1c0 10 1.7 19.6 4.9 28.5l-132.1 73.8c-15.7-20.6-40.5-33.8-68.3-33.8-47.4 0-86.1 38.6-86.1 86.1s38.7 86.1 86.2 86.1c27.8 0 52.6-13.3 68.4-33.9l132.2 73.9c-3.2 9-5 18.7-5 28.7 0 47.4 38.6 86.1 86.1 86.1s86.1-38.6 86.1-86.1-38.7-86.1-86.2-86.1zm0-282.3c32.6 0 59.1 26.5 59.1 59.1s-26.5 59.1-59.1 59.1-59.1-26.5-59.1-59.1 26.6-59.1 59.1-59.1zM100 299.8c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.6 59.1-59.1 59.1zm281.6 154.7c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.5 59.1-59.1 59.1z" fill="#FFF"/>
+			</symbol>
+			<symbol id="plus" width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M8.342 7.034H15v1.69H8.342V16H6.523V8.725H0V7.034h6.523V0h1.819z" fill="#FFF" fill-rule="evenodd"/>
+			</symbol>
+			<symbol id="minus" width="12" height="3" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M11.89 2.547H.197V.08h11.695z"  fill-rule="evenodd"/>
+			</symbol>
+    </svg>
+		<!-- content -->
     <header class="header">
     </header>
     <section class="product">
@@ -92,7 +123,17 @@
 					<div class="form-options form-qty">
 						<h4>Cantidad: </h4>
 						<div class="type-qty">
-
+							<button class="button-form "
+											onclick="lessButton()"
+											type="button">
+									<svg class="icon-minus"><use xlink:href="#minus"></use></svg>
+							</button>
+							<input type="text" id="foo" value="1">
+							<button class="button-form "
+											onclick="moreButton()"
+											type="button">
+									<svg class="icon-plus"><use xlink:href="#plus"></use></svg>
+							</button>
 						</div>
 					</div>
 				</form>
@@ -122,9 +163,62 @@
 					</div>
 				</form>
 			</div>
-			<div class="product-info-detail"></div>
-
-
+			<div class="product-info-detail">
+				<div class="detail-wrap">
+					<div class="info-detail detail-shipping">
+						<svg class="icon icon-shipped">
+							<use xlink:href="#shipped"></use>
+						</svg>
+						<p>Envío <span class="shipped-type">gratis</span></p>
+						<a href="#">Conocer formas de envío</a>
+					</div>
+					<div class="info-detail detail-stock">
+						<p>En stock <span>(Quedan 2)</span></p>
+						<div class="detail-stok-reviews">
+							<ul class="reviews">
+								<li>
+									<svg><use xlink:href="#star"></use></svg>
+								</li>
+								<li>
+									<svg><use xlink:href="#star"></use></svg>
+								</li>
+								<li>
+									<svg><use xlink:href="#star"></use></svg>
+								</li>
+								<li>
+									<svg><use xlink:href="#star"></use></svg>
+								</li>
+								<li>
+									<svg class="star-empty"><use xlink:href="#star"></use></svg>
+								</li>
+							</ul>
+							<a href="">Leer reseñas</a>
+						</div>
+					</div>
+					<div class="info-detail details-store">
+						<span>De: </span><a href=""> Nikon</a>
+						<a href="#" class="amazon-choice">amazon's <span>choice</span></a>
+					</div>
+					<div class="info-detail detail-price-share">
+						<p>EUR 439,00</p>
+						<a href="">Compartir:
+							<svg class="icon icon-share"><use xlink:href="#share"></use></svg></a>
+					</div>
+				</div>
+				<div class="info-detail detail-buy">
+					<a href="#" class="btn btn-submit">
+						<svg class="icon icon-shop">
+							<use xlink:href="#shop"></use>
+						</svg>Añadir al carrito</a>
+						<a href="#" class="btn btn-wish">
+							<svg class="icon-wish">
+								<use xlink:href="#wish"></use>
+							</svg>
+						</a>
+				</div>
+			</div>
     </section>
+
+		<script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>

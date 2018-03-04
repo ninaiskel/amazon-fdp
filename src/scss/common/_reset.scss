@@ -2,6 +2,13 @@ body {
   font-family: 'Roboto';
   font-size: 18px;
   margin: 0;
+  @include breakpoint('small') {
+      font-size: 16px;
+  }
+}
+
+p {
+   margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -21,6 +28,16 @@ h4 {
   font-size: 1.1rem;
 }
 
+@include breakpoint('small') {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
 button {
   box-shadow: none;
 }
@@ -33,4 +50,8 @@ ul {
 
 button, input, select {
   font-family : inherit;
+  outline: none;
+  border: none;
+  border-radius: 0;
+
 }
