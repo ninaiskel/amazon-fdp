@@ -6,23 +6,33 @@
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .6s ease;
+  transition: all .4s ease;
 
   &-submit {
     background: map-get($colors, second);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .6s ease;
+
+    &:hover {
+      background: map-get($colors, second-dark);
+      .icon-shop {
+        transform: scale(1.1);
+      }
+    }
   }
 
   &-wish {
     background: map-get($colors, main-dark);
-  }
+    .icon-wish {
+      fill: map-get($colors, main-dark);
+    }
 
-  &-inactive {
-    background: map-get($colors, border);
-    svg {
-      fill: map-get($colors, text-light);
+    &:hover {
+      .icon-wish {
+        fill: map-get($colors, second);
+      }
     }
   }
 }

@@ -19,6 +19,10 @@
       border: 1px solid map-get($colors, second);
       box-sizing: border-box;
       padding: 10px;
+      &:hover {
+        background: map-get($colors, second);
+        color: white;
+      }
     }
 
     input[type="radio"]:checked + label {

@@ -1,33 +1,143 @@
 .product {
-  margin-top: 40px;
+  margin-top: 20px;
 
   &-name {
     padding: 20px;
     text-align: center;
+    @include breakpoint('small') {
+      padding: 10px;
+    }
   }
 }
 
 .product-image {
-  margin: 50px 0;
+  margin: 20px 0;
   display: grid;
   align-items: center;
-  grid-template-columns: 30% 1fr 30%;
+  grid-template-columns: 200px 1fr 300px;
+  grid-template-rows: auto;
+  grid-template-areas: "list photo price" ;
   justify-content: space-around;
   justify-items: center;
 
-  &-list {
-
+  @include breakpoint('medium') {
+    grid-template-columns: 1fr 25%;
+    grid-template-areas: "photo price" "list list";
   }
 
-  &-main {
-    img {
-      width: 10%;
+  @include breakpoint('small') {
+    grid-template-columns: 1fr;
+    grid-template-areas: "price" "photo" "list";
+    margin: 20px 0 40px;
+  }
+
+  &-list {
+    border: 1px solid map-get($colors, border);
+    background: map-get($colors, background);
+    text-align: center;
+    grid-area: list;
+
+    li {
+      width: 80px;
+      height: 80px;
+      background: white;
+      padding: 6px;
+      margin-bottom: 6px;
+      cursor: pointer;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    button {
+      background: transparent;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    @include breakpoint('>=small<=medium') {
+      display: flex;
+      ul {
+        display: flex;
+
+        li {
+          margin-bottom: 0;
+          margin-right: 6px;
+          width: 50px;
+          height: 50px;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      .icon-arrow {
+        transform: rotate(-90deg);
+      }
     }
   }
 
-  .price {
-    color: white;
-    padding: 20px;
-    background: map-get($colors, main);
+  &-main {
+    height: 350px;
+    grid-area: photo;
+    text-align: center;
+
+    img {
+      width: auto;
+      height: inherit;
+    }
+
+    @include breakpoint('>=small<=medium') {
+      margin: 20px 0;
+
+      img {
+        width: auto;
+      }
+    }
+
+    @include breakpoint('small') {
+      height: 250px;
+    }
+  }
+}
+
+.img-active {
+  border: 1px solid map-get($colors, second);
+
+}
+
+.price {
+  align-self: start;
+  background: map-get($colors, main);
+  color: white;
+  grid-area: price;
+  justify-self: end;
+  margin-top: 40px;
+  padding: 20px;
+  width: 70%;
+
+  @include breakpoint('>=small<=medium') {
+    margin-top: 0;
+    padding: 10px;
+    width: 60%;
+  }
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    .older {
+      text-decoration: line-through;
+      font-size: .8rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  .prime-img {
+    width: 50px;
+    height: 15px;
   }
 }

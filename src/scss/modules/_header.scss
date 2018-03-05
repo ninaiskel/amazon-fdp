@@ -1,4 +1,8 @@
 .header {
   background: map-get($colors, main);
   height: 60px;
+
+  @include breakpoint('small') {
+      height: 40px;
+  }
 }

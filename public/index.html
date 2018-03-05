@@ -5,7 +5,7 @@
 		<meta name="application-name" content="Amazon product">
 		<meta name="author" content="Jessica Aiskel Aristimuño">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0'">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 		<meta name="robots" content="all">
 		<meta name="description" content="ficha de producto amazon">
 		<title>Amazon | ficha de producto</title>
@@ -31,16 +31,19 @@
 			  <path d="M9.075.502l1.867 3.824c.13.266.38.45.671.493l4.175.613c.73.107 1.023 1.015.494 1.536L13.26 9.945a.907.907 0 0 0-.256.797l.713 4.203c.125.736-.64 1.297-1.294.95L8.691 13.91a.884.884 0 0 0-.83 0l-3.734 1.984c-.654.348-1.418-.213-1.293-.95l.713-4.202a.907.907 0 0 0-.256-.797L.27 6.968c-.53-.521-.238-1.43.493-1.536l4.175-.613a.892.892 0 0 0 .67-.493L7.478.502a.887.887 0 0 1 1.598 0z" />
 			</symbol>
 			<symbol id="wish" xmlns="http://www.w3.org/2000/svg">
-				<path d="M11.5 21l-1.47-1.522c-5.46-5-9.03-8.37-9.03-12.5C1 3.608 3.52 1 6.775 1c1.785 0 3.57.87 4.725 2.283C12.655 1.87 14.44 1 16.225 1 19.48 1 22 3.609 22 6.978c0 4.13-3.57 7.5-9.03 12.5L11.5 21z" stroke="#FFF" fill="none"/>
+				<path d="M11.5 21l-1.47-1.522c-5.46-5-9.03-8.37-9.03-12.5C1 3.608 3.52 1 6.775 1c1.785 0 3.57.87 4.725 2.283C12.655 1.87 14.44 1 16.225 1 19.48 1 22 3.609 22 6.978c0 4.13-3.57 7.5-9.03 12.5L11.5 21z" stroke="#FFF" />
 			</symbol>
 			<symbol id="share" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.6 481.6" >
 			  <path d="M381.6 309.4c-27.7 0-52.4 13.2-68.2 33.6l-132.3-73.9c3.1-8.9 4.8-18.5 4.8-28.4 0-10-1.7-19.5-4.9-28.5l132.2-73.8c15.7 20.5 40.5 33.8 68.3 33.8 47.4 0 86.1-38.6 86.1-86.1S429 0 381.5 0s-86.1 38.6-86.1 86.1c0 10 1.7 19.6 4.9 28.5l-132.1 73.8c-15.7-20.6-40.5-33.8-68.3-33.8-47.4 0-86.1 38.6-86.1 86.1s38.7 86.1 86.2 86.1c27.8 0 52.6-13.3 68.4-33.9l132.2 73.9c-3.2 9-5 18.7-5 28.7 0 47.4 38.6 86.1 86.1 86.1s86.1-38.6 86.1-86.1-38.7-86.1-86.2-86.1zm0-282.3c32.6 0 59.1 26.5 59.1 59.1s-26.5 59.1-59.1 59.1-59.1-26.5-59.1-59.1 26.6-59.1 59.1-59.1zM100 299.8c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.6 59.1-59.1 59.1zm281.6 154.7c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.5 59.1-59.1 59.1z" fill="#FFF"/>
 			</symbol>
-			<symbol id="plus" width="15" height="16" xmlns="http://www.w3.org/2000/svg">
-			  <path d="M8.342 7.034H15v1.69H8.342V16H6.523V8.725H0V7.034h6.523V0h1.819z" fill="#FFF" fill-rule="evenodd"/>
+			<symbol id="plus" width="13" height="14" xmlns="http://www.w3.org/2000/svg">
+  			<path d="M7.23 6.096H13v1.465H7.23v6.306H5.653V7.562H0V6.096h5.653V0H7.23z" fill="#FFF" fill-rule="evenodd"/>
 			</symbol>
-			<symbol id="minus" width="12" height="3" xmlns="http://www.w3.org/2000/svg">
-			  <path d="M11.89 2.547H.197V.08h11.695z"  fill-rule="evenodd"/>
+			<symbol id="minus" width="8" height="2" xmlns="http://www.w3.org/2000/svg">
+  			<path d="M7.927 1.698H.131V.054h7.796z"/>
+			</symbol>
+			<symbol id="arrow" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M2 2l9.819 10L22 2" stroke-width="3" stroke="#F78B04" fill="none" stroke-linecap="round"/>
 			</symbol>
     </svg>
 		<!-- content -->
@@ -52,21 +55,31 @@
       </div>
       <div class="product-image">
         <div class="product-image-list">
-          <ul class="">
-            <li>image</li>
-            <li>image</li>
-            <li>image</li>
-            <li>image</li>
+          <ul id="carousel">
+            <li>
+            	<img onclick="displayBigPhoto('img/big/img-1.jpg', 0)" width="80" height="80" src="img/small/img-small-1.png" alt="camera-1">
+            </li>
+            <li>
+            	<img onclick="displayBigPhoto('img/big/img-2.jpg', 1)" width="80" height="80" src="img/small/img-small-2.png" alt="camera-2">
+            </li>
+            <li>
+            	<img onclick="displayBigPhoto('img/big/img-3.jpg', 2)" width="80" height="80" src="img/small/img-small-3.png" alt="camera-3">
+            </li>
+            <li>
+            	<img onclick="displayBigPhoto('img/big/img-4.jpg', 3)" width="80" height="80" src="img/small/img-small-4.png" alt="photo-family">
+            </li>
           </ul>
-          <button></button>
+          <button>
+						<svg class="icon-arrow"><use xlink:href="#arrow"></use></svg>
+					</button>
         </div>
         <figure class="product-image-main">
-          <img src="/img/product-1.jpg" alt="product-1">
+          <img id="big-photo" width="334" height="350" src="img/big/img-1.jpg" alt="camera-1">
         </figure>
         <div class="price">
-          <div>
-            <small>EUR 549,00</small>
-            <span>prime</span>
+          <div class="price-head">
+            <span class="older">EUR 549,00</span>
+            <img class="prime-img" src="img/prime.svg" alt="prime">
           </div>
           <h1>EUR 340,00</h1>
         </div>
@@ -74,71 +87,74 @@
     </section>
     <section class="product-info">
 			<div class="product-info-wrap">
-				<form action="" class="product-info-form">
-					<!-- color-choice -->
-					<div class="form-options form-color">
-						<h4>Color: </h4>
-						<div class="color-choice">
-							<div class="color-choice-input input-color-gray-dark">
-								<input id="cam-color-gray-dark"
-								name="cam-color"
-								type="radio"/>
-								<label for="cam-color-gray-dark"></label>
-							</div>
-							<div class="color-choice-input input-color-black">
-								<input id="cam-color-black"
-								name="cam-color"
-								type="radio" checked/>
-								<label for="cam-color-black"></label>
-							</div>
-							<div class="color-choice-input input-color-gray-medium">
-								<input id="cam-color-gray-medium"
-								name="cam-color"
-								type="radio"/>
-								<label for="cam-color-gray-medium"></label>
-							</div>
-							<div class="color-choice-input input-color-gray-light">
-								<input id="cam-color-gray-light"
-								name="cam-color"
-								type="radio"/>
-								<label for="cam-color-gray-light"></label>
-							</div>
-						</div>
-					</div>
-					<!-- type choice -->
-					<div class="form-options form-type">
-						<h4>Comprar: </h4>
-						<div class="type-choice">
-							<div class="type-choice-input new">
-								<input id="new" name="type-choice" type="radio" checked/>
-								<label for="new">Nuevo</label>
-							</div>
-							<div class="type-choice-input used">
-								<input id="used" name="type-choice" type="radio"/>
-								<label for="used">Usado</label>
+				<form action="">
+					<div class="product-info-form">
+						<!-- color-choice -->
+						<div class="form-options form-color">
+							<h4>Color: </h4>
+							<div class="color-choice">
+								<div class="color-choice-input input-color-gray-dark">
+									<input id="cam-color-gray-dark"
+									name="cam-color"
+									type="radio"/>
+									<label for="cam-color-gray-dark"></label>
+								</div>
+								<div class="color-choice-input input-color-black">
+									<input id="cam-color-black"
+									name="cam-color"
+									type="radio" checked/>
+									<label for="cam-color-black"></label>
+								</div>
+								<div class="color-choice-input input-color-gray-medium">
+									<input id="cam-color-gray-medium"
+									name="cam-color"
+									type="radio"/>
+									<label for="cam-color-gray-medium"></label>
+								</div>
+								<div class="color-choice-input input-color-gray-light">
+									<input id="cam-color-gray-light"
+									name="cam-color"
+									type="radio"/>
+									<label for="cam-color-gray-light"></label>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- type choice -->
-					<div class="form-options form-qty">
-						<h4>Cantidad: </h4>
-						<div class="type-qty">
-							<button class="button-form "
-											onclick="lessButton()"
-											type="button">
-									<svg class="icon-minus"><use xlink:href="#minus"></use></svg>
-							</button>
-							<input type="text" id="foo" value="1">
-							<button class="button-form "
-											onclick="moreButton()"
-											type="button">
-									<svg class="icon-plus"><use xlink:href="#plus"></use></svg>
-							</button>
+						<!-- type choice -->
+						<div class="form-options form-type">
+							<h4>Comprar: </h4>
+							<div class="type-choice">
+								<div class="type-choice-input new">
+									<input id="new" name="type-choice" type="radio" checked/>
+									<label for="new">Nuevo</label>
+								</div>
+								<div class="type-choice-input used">
+									<input id="used" name="type-choice" type="radio"/>
+									<label for="used">Usado</label>
+								</div>
+							</div>
 						</div>
+						<!-- type choice -->
+						<div class="form-options form-qty">
+							<h4>Cantidad: </h4>
+							<div class="type-qty">
+								<button class="button-form disable"
+												onclick="lessButton()"
+												type="button"
+												id="button-less">
+										<svg class="icon-minus"><use xlink:href="#minus"></use></svg>
+								</button>
+								<input type="text" id="foo" value="1">
+								<button class="button-form "
+												onclick="moreButton()"
+												type="button">
+										<svg class="icon-plus"><use xlink:href="#plus"></use></svg>
+								</button>
+							</div>
+						</div>
+					</form>
 					</div>
-				</form>
-				<form class="product-info-form" action="">
-					<div class="form-options form-aditional">
+					<div class="product-info-form">
+						<div class="form-options form-aditional">
 						<h4>Nombre de estilo: </h4>
 						<div class="aditional-options">
 							<div class="aditional-options-input ">
@@ -160,6 +176,7 @@
 								<label for="kit-55">Kit Objetivo 55</label>
 							</div>
 						</div>
+					</div>
 					</div>
 				</form>
 			</div>

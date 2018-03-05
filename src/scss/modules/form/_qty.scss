@@ -10,5 +10,25 @@
 
   button {
     cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
+
+  @include breakpoint('small') {
+    button {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  svg {
+    fill: white;
+  }
+}
+
+.disable {
+  background: map-get($colors, border);
+  svg {
+    fill: map-get($colors, text-light);
   }
 }
